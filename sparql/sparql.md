@@ -12,10 +12,10 @@ The SPARQL query language for RDF is designed to meet the use cases and requirem
 
 The code in `queries` directory about the methods bellow its from SPARQLWrapper documentation.
 
-* SELECT query
-* ASK query
-* CONSTRUCT query
-* DESCRIBE query
+* [SELECT query](https://www.w3.org/TR/rdf-sparql-query/#select)
+* [ASK query](https://www.w3.org/TR/rdf-sparql-query/#ask)
+* [CONSTRUCT query](https://www.w3.org/TR/rdf-sparql-query/#construct)
+* [DESCRIBE query](https://www.w3.org/TR/rdf-sparql-query/#describe)
 
 ## Python sparqlwrapper
 
