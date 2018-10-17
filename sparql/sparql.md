@@ -22,3 +22,4 @@ The code in `queries` directory about the methods bellow its from SPARQLWrapper 
 * [sparqlwrapper package](https://pypi.org/project/SPARQLWrapper/)
 * [sparqlwrapper documentation](https://rdflib.github.io/sparqlwrapper/)
 * [Ontobee](http://www.ontobee.org/tutorial/sparql/)
+* [RDF example](https://jena.apache.org/tutorials/sparql_data_pt.html)
