@@ -1,13 +1,13 @@
 from SPARQLWrapper import SPARQLWrapper, JSON
+import simplejson as json
 
 sparql = SPARQLWrapper("http://dbpedia.org/sparql")
 sparql.setQuery("""
-    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-    SELECT ?label
-    WHERE { <http://dbpedia.org/resource/Asturias> rdfs:label ?label }
+        PREFIX dbpedia: <http://dbpedia.org/resource/>
+        PREFIX dbpedia-ont: <http://dbpedia.org/ontology/>
+        SELECT ?album
+        WHERE { ?album dbpedia-ont:artist dbpedia:The_Beatles .}
 """)
 sparql.setReturnFormat(JSON)
 results = sparql.query().convert()
-
-for result in results["results"]["bindings"]:
-    print(result["label"]["value"])
+print(json.dumps(results, indent=4, sort_keys=True))
