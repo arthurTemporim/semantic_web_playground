@@ -1,0 +1,262 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#"
+     xml:base="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2018/8/ontopizza#hasBase -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/root/ontologies/2018/8/ontopizza#hasBase"/>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#hasMassaBase -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#hasMassaBase">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#Pizza"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#MassaBase"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#hasTopping -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#hasTopping">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#Pizza"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#Topping"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#Cebola -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#Cebola">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#VegetarianTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#CheeseTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#CheeseTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#Topping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#LomboCanadense -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#LomboCanadense">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#MeatTopping"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#Salaminho"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#MassaBase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#MassaBase"/>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#MeatTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#MeatTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#Topping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#Mozzarella -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#Mozzarella">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#CheeseTopping"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#Parmezan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#NamedPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#NamedPizza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#Pizza"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#Parmezan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#Parmezan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#CheeseTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#Pimentao -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#Pimentao">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#VegetarianTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#Pizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#Pizza">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/root/ontologies/2018/8/ontopizza#hasBase"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#MassaBase"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#PizzaMarguerita -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#PizzaMarguerita">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#NamedPizza"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#PizzaMozzarella -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#PizzaMozzarella">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#NamedPizza"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#Portuguesa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#Portuguesa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#NamedPizza"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#Rucula -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#Rucula">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#VegetarianTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#Salaminho -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#Salaminho">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#MeatTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#SeaFoodTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#SeaFoodTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#Topping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#Tomate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#Tomate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#VegetarianTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#Topping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#Topping"/>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#VegetarianTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#VegetarianTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#Topping"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#Cebola"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#Pimentao"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#Rucula"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#Tomate"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#CheeseTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#MeatTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#SeaFoodTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#VegetarianTopping"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#MassaBase"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#Pizza"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#Topping"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#PizzaMarguerita"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#PizzaMozzarella"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-4#Portuguesa"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
