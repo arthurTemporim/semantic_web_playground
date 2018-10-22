@@ -13,3 +13,4 @@ Virtuoso is a revolutionary, next generation, high-performance virtual database 
 ## References
 
 * [virtuoso documentation](http://docs.openlinksw.com/virtuoso/)
+* [Comparison of triplestores](https://en.wikipedia.org/wiki/Comparison_of_triplestores)
