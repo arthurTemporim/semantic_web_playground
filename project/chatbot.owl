@@ -163,10 +163,16 @@
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#NamedChatbot -->
+    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#NamedChatBot -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#NamedChatbot">
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#NamedChatBot">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#ChatBot"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#hasChatbotType"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Automate"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -214,7 +220,21 @@
     <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#infraBot -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#infraBot">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#NamedChatbot"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#NamedChatBot"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#hasChatbotType"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Automate"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#personalBot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#personalBot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#NamedChatBot"/>
     </owl:Class>
     
 
