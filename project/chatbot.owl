@@ -30,12 +30,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#hasComunicationChannel -->
+    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#hasComunicationType -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#hasComunicationChannel">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#hasComunicationType">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#ChatBot"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#ComunicationChannel"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#ComunicationType"/>
     </owl:ObjectProperty>
     
 
@@ -52,6 +51,7 @@
     <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#hasInteractionStyle -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#hasInteractionStyle">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#ChatBot"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#InteractionStyle"/>
     </owl:ObjectProperty>
@@ -93,9 +93,7 @@
 
     <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#ChatbotType -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#ChatbotType">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#ChatBot"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#ChatbotType"/>
     
 
 
@@ -107,19 +105,15 @@
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#ComunicationChannel -->
+    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#ComunicationType -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#ComunicationChannel">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#ChatBot"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#ComunicationType"/>
     
 
 
     <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Direction -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Direction">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#ChatBot"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Direction"/>
     
 
 
@@ -139,14 +133,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#InAndOut -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#InAndOut">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Direction"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Informative -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Informative">
@@ -157,23 +143,7 @@
 
     <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#InteractionStyle -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#InteractionStyle">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#ChatBot"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#NamedChatBot -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#NamedChatBot">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#ChatBot"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#hasChatbotType"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Automate"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#InteractionStyle"/>
     
 
 
@@ -196,7 +166,7 @@
     <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Text -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Text">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#ComunicationChannel"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#ComunicationType"/>
     </owl:Class>
     
 
@@ -204,15 +174,7 @@
     <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Voice -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Voice">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#ComunicationChannel"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#VoiceAndText -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#VoiceAndText">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#ComunicationChannel"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#ComunicationType"/>
     </owl:Class>
     
 
@@ -220,11 +182,23 @@
     <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#infraBot -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#infraBot">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#NamedChatBot"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#ChatBot"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#hasChatbotType"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Automate"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Automate"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#hasComunicationType"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Text"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#hasInteractionStyle"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Dull"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -234,7 +208,19 @@
     <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#personalBot -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#personalBot">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#NamedChatBot"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#ChatBot"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#hasChatbotType"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Colaborative"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#hasInteractionStyle"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#RelationshipBuilder"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -261,22 +247,6 @@
             <rdf:Description rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Automate"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Colaborative"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Informative"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#In"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#InAndOut"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Out"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Text"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Voice"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#VoiceAndText"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
