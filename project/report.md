@@ -1,4 +1,9 @@
 # Report
+
+## Ontology
+
+![ontology](images/chatbot.png)
+
 ## References
 
 * [Protegé Tutorial](https://www.youtube.com/watch?v=R9ERlUgvgwM&list=PLea0WJq13cnAfCC0azrCyquCN_tPelJN1)
