@@ -24,7 +24,7 @@
     <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#extract -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#extract">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#webCrawler"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#WebCrawler"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Data"/>
     </owl:ObjectProperty>
     
@@ -147,7 +147,7 @@
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Conversation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#webCrawler"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#WebCrawler"/>
         <rdfs:comment xml:lang="en">&quot;A chatbot (also known as a smartbots, talkbot, chatterbot, Bot, IM bot, interactive agent, Conversational interface or Artificial Conversational Entity) is a computer program or an artificial intelligence which conducts a conversation via auditory or textual methods.&quot;</rdfs:comment>
     </owl:Class>
     
@@ -181,9 +181,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#MessagingAplication -->
+    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#MessagingApplication -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#MessagingAplication">
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#MessagingApplication">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#SoftwareAplication"/>
         <rdfs:comment xml:lang="en">&quot;Messaging apps (a.k.a. &quot;Social messaging&quot; or &quot;chat applications&quot;) are apps and platforms that enable messaging, many of which started around social networking platforms,[1] but many of which have now developed into broad platforms enabling status updates, chatbots, payments and conversational commerce (e-commerce via chat).&quot;
 
@@ -212,9 +212,9 @@ I am assuming that chatbots are more than messaging applications because for thi
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#webCrawler -->
+    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#WebCrawler -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#webCrawler">
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#WebCrawler">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Bot"/>
         <rdfs:comment xml:lang="en">&quot;A Web crawler, sometimes called a spider or spiderbot and often shortened to crawler, is an Internet bot that systematically browses the World Wide Web, typically for the purpose of Web indexing (web spidering). &quot;</rdfs:comment>
     </owl:Class>
@@ -253,7 +253,7 @@ I am assuming that chatbots are more than messaging applications because for thi
     <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#facebook -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#facebook">
-        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#MessagingAplication"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#MessagingApplication"/>
     </owl:NamedIndividual>
     
 
@@ -303,7 +303,7 @@ I am assuming that chatbots are more than messaging applications because for thi
     <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#rocketchat -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#rocketchat">
-        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#MessagingAplication"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#MessagingApplication"/>
     </owl:NamedIndividual>
     
 
@@ -322,7 +322,7 @@ I am assuming that chatbots are more than messaging applications because for thi
     <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#telegram -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#telegram">
-        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#MessagingAplication"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#MessagingApplication"/>
         <send rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#unbRuMenu"/>
     </owl:NamedIndividual>
     
@@ -349,7 +349,7 @@ I am assuming that chatbots are more than messaging applications because for thi
     <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#webCrawlerUnbRuMenu -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#webCrawlerUnbRuMenu">
-        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#webCrawler"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#WebCrawler"/>
         <extract rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#unbRuMenu"/>
         <send rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#unbRuMenu"/>
     </owl:NamedIndividual>
@@ -359,7 +359,7 @@ I am assuming that chatbots are more than messaging applications because for thi
     <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#whatsapp -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#whatsapp">
-        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#MessagingAplication"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#MessagingApplication"/>
     </owl:NamedIndividual>
     
 
@@ -376,7 +376,7 @@ I am assuming that chatbots are more than messaging applications because for thi
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Bot"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#MessagingAplication"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#MessagingApplication"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#webSite"/>
         </owl:members>
     </rdf:Description>
