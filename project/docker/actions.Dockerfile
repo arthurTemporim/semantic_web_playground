@@ -7,8 +7,8 @@ ADD ./docker/actions.requirements.txt /tmp/
 RUN pip install --upgrade pip && \
     pip install --no-cache-dir -r /tmp/actions.requirements.txt
 
-ADD ./bot/actions.py /bot/
-ADD ./bot/Makefile /bot/
+ADD ./bot/actions.py /bot/actions.py
+ADD ./bot/Makefile /bot/Makefile
 
 WORKDIR bot/
 

@@ -1,2 +1,4 @@
+SPARQLWrapper==1.8.2
+simplejson==3.16.0
 rasa-core==0.12.2
 rasa-core-sdk==0.12.1
