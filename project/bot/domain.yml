@@ -4,13 +4,23 @@ intents:
   - get_chatbots
   - get_conversations
   - knows_knowunbrumenu
+  - what_is
 
 entities:
-  - chatbots
+  - class
 
 slots:
-  chatbots:
-    type: text
+  class:
+    type: categorical
+    values:
+    - WebCrawler
+    - Data
+    - Conversation
+    - ChatBot
+    - SoftwareAplication
+    - Bot
+    - MessagingApplication
+    - webSite
 
 actions:
 - utter_greet
@@ -18,6 +28,7 @@ actions:
 - action_get_chatbots
 - action_get_conversations
 - action_knows_knowunbrumenu
+- action_what_is
 
 templates:
   utter_greet:

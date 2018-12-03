@@ -39,3 +39,13 @@
   - action_knows_knowunbrumenu
 * goodbye
   -utter_goodbye
+
+## path 8
+* what_is{"class": "ChatBot"}
+  - slot{"class": "ChatBot"}
+  - action_what_is
+
+## path 9
+* what_is{"class": "Data"}
+  - slot{"class": "Data"}
+  - action_what_is

@@ -39,3 +39,14 @@
 - I need to ask to wich bot about RU menu?
 - quem sabe o cardápio do RU?
 
+## intent:what_is
+- What is [ChatBot](class)
+- What is [Data](class)
+- What is [WebCrawler](class)
+- What is [Data](class)
+- What is [Conversation](class)
+- What is [ChatBot](class)
+- What is [SoftwareAplication](class)
+- What is [Bot](class)
+- What is [MessagingApplication](class)
+- What is [webSite](class)

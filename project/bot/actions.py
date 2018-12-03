@@ -1,6 +1,6 @@
 from rasa_core_sdk import Action
 from rasa_core_sdk.events import SlotSet
-from middleware import get_data, print_json, format_result
+from middleware import get_data, print_json, format_result, classQuery
 
 API_CONNECTION_ERROR = 'I had a problem while trying to get the data =/'
 
@@ -14,7 +14,7 @@ class ActionGetChatbots(Action):
       try:
          result  = get_data('a chatbot:ChatBot')
          message += format_result(result)
-      except e:
+      except ValueError:
          message = API_CONNECTION_ERROR
 
       dispatcher.utter_message(message)
@@ -29,7 +29,7 @@ class ActionGetConversations(Action):
       try:
           result  = get_data('a chatbot:Conversation')
           message += format_result(result)
-      except e:
+      except ValueError:
           message = API_CONNECTION_ERROR
 
       dispatcher.utter_message(message)
@@ -44,7 +44,25 @@ class ActionKnowsKnowUnbRuMenu(Action):
          result  = get_data('chatbot:participate chatbot:knowUnbRuMenu')
          result = format_result(result)
          message += result
-      except e:
+      except ValueError:
          message = API_CONNECTION_ERROR
 
       dispatcher.utter_message(message)
+
+class ActionWhatIs(Action):
+   def name(self):
+      return "action_what_is"
+
+   def run(self, dispatcher, tracker, domain):
+      tslot = tracker.get_slot('class').lower()
+      if tslot not in domain['slots']['class']['values']:
+         dispatcher.utter_message("Sorry, i don't know this concept yet =/")
+      elif tslot != None:
+         try:
+            dispatcher.utter_message("You are asking about: ")
+            dispatcher.utter_message(tslot)
+            dispatcher.utter_message(format_result(get_data(query=classQuery), 'class', tslot))
+         except ValueError:
+            dispatcher.utter_message(API_CONNECTION_ERROR)
+      else:
+         dispatcher.utter_message("You need to tell what you want to know ;)")
