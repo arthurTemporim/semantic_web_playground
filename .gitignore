@@ -1,2 +1,4 @@
-data/
 catalog-v001.xml
+env/
+models/
+rasa_core.log
