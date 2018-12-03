@@ -1,10 +1,19 @@
 intents:
   - greet
   - goodbye
+  - list_chatbots
+
+entities:
+  - chatbots
+
+slots:
+  chatbots:
+    type: text
 
 actions:
 - utter_greet
 - utter_goodbye
+- action_get_chatbots
 
 templates:
   utter_greet:

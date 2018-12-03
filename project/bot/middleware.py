@@ -19,10 +19,19 @@ def get_data(data):
     sparql.setReturnFormat(JSON)
     return sparql.query().convert()
 
+def format_result(result):
+    data = ''
+    content = result['results']['bindings']
+    for i in range(len(content)):
+        data += content[i]['thing']['value'].split('#')[1].capitalize()
+        if i+1 < len(content):
+            data +=', '
+    return data
+
 # List bots
-print_json(get_data('a chatbot:ChatBot'))
+#print_json(get_data('a chatbot:ChatBot'))
 # List Conversations
-print_json(get_data('a chatbot:Conversation'))
+#print_json(get_data('a chatbot:Conversation'))
 # List bots able to talk about something
-print_json(get_data('chatbot:participate chatbot:greet'))
-print_json(get_data('chatbot:participate chatbot:knowUnbRuMenu'))
+#print_json(get_data('chatbot:participate chatbot:greet'))
+#print_json(get_data('chatbot:participate chatbot:knowUnbRuMenu'))
