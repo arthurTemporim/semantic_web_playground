@@ -10,3 +10,10 @@ services:
       - ./data/virtuoso:/data
     ports:
       - "8890:8890"
+
+  jena:
+    image: stain/jena-fuseki
+    volumes:
+      - ./fuseki:/fuseki
+    ports:
+      - "3030:3030"
