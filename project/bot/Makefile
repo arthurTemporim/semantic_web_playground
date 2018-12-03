@@ -10,4 +10,10 @@ run-actions:
 	python -m rasa_core_sdk.endpoint --actions actions
 
 run:
-	python -m rasa_core.run -d models/dialogue/ -u models/current/nlu/ --endpoints endpoints.yml --debug --enable_api
+	python -m rasa_core.run -d models/dialogue/ -u models/current/nlu/ \
+		--endpoints endpoints.yml --debug --enable_api
+
+run-telegram:
+	python -m rasa_core.run -d models/dialogue -u models/current/nlu \
+		--endpoints endpoints.yml --port 5002 \
+		--credentials credentials.yml
