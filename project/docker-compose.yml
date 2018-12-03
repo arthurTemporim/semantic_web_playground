@@ -16,8 +16,7 @@ services:
       - 5002:5002
     depends_on:
       - actions
-    #command: "make run-telegram"
-    command: "sleep infinity"
+    command: "make run"
 
   actions:
     build:
@@ -31,5 +30,4 @@ services:
       - ./bot/actions.py:/bot/actions.py
       - ./bot/middleware.py:/bot/middleware.py
       - ./bot/Makefile:/bot/Makefile
-    #command: "make run-actions"
-    command: "sleep infinity"
+    command: "make run-actions"

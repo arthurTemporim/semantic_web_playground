@@ -1,7 +1,9 @@
 intents:
   - greet
   - goodbye
-  - list_chatbots
+  - get_chatbots
+  - get_conversations
+  - knows_knowunbrumenu
 
 entities:
   - chatbots
@@ -14,11 +16,13 @@ actions:
 - utter_greet
 - utter_goodbye
 - action_get_chatbots
+- action_get_conversations
+- action_knows_knowunbrumenu
 
 templates:
   utter_greet:
-  - text: "Hey! How are you?"
+  - text: "Hi, I'm a ChatBot! My name is TempoBot o/"
 
   utter_goodbye:
-  - text: "Bye"
+  - text: "Bye human"
 
