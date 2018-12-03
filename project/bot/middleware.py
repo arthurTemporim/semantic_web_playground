@@ -6,17 +6,18 @@ baseQuery = """
   prefix owl: <http://www.w3.org/2002/07/owl#>
   prefix chatbot: <https://jena.temposerver.ml/chatbot/#>
   SELECT ?conversation
-  WHERE {
-    ?conversation a chatbot:Conversation
-  }
+  WHERE {{
+    ?conversation a chatbot:{}
+  }}
 """
 
 def print_json(result):
     print(json.dumps(result, indent=4, sort_keys=True))
 
 def get_data(data):
-    sparql.setQuery(baseQuery)
+    sparql.setQuery(baseQuery.format(data))
     sparql.setReturnFormat(JSON)
     return sparql.query().convert()
 
 print_json(get_data('ChatBot'))
+print_json(get_data('Conversation'))
