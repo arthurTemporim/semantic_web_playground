@@ -1,3 +1,6 @@
-data/
 catalog-v001.xml
+study/virtuso/data/
 fuseki/
+env/
+models/
+rasa_core.log
