@@ -1,12 +1,13 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#"
-     xml:base="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7"
+<rdf:RDF xmlns="https://jena.temposerver.ml/chatbot/"
+     xml:base="https://jena.temposerver.ml/chatbot/"
+     xmlns:chatbot="https://jena.temposerver.ml/chatbot/#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7"/>
+    <owl:Ontology rdf:about="https://jena.temposerver.ml/chatbot/"/>
     
 
 
@@ -21,58 +22,58 @@
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#extract -->
+    <!-- https://jena.temposerver.ml/chatbot/#extract -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#extract">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#WebCrawler"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Data"/>
+    <owl:ObjectProperty rdf:about="https://jena.temposerver.ml/chatbot/#extract">
+        <rdfs:domain rdf:resource="https://jena.temposerver.ml/chatbot/#WebCrawler"/>
+        <rdfs:range rdf:resource="https://jena.temposerver.ml/chatbot/#Data"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#hasMessage -->
+    <!-- https://jena.temposerver.ml/chatbot/#hasMessage -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#hasMessage">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#isFrom"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Conversation"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Data"/>
+    <owl:ObjectProperty rdf:about="https://jena.temposerver.ml/chatbot/#hasMessage">
+        <owl:inverseOf rdf:resource="https://jena.temposerver.ml/chatbot/#isFrom"/>
+        <rdfs:domain rdf:resource="https://jena.temposerver.ml/chatbot/#Conversation"/>
+        <rdfs:range rdf:resource="https://jena.temposerver.ml/chatbot/#Data"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#isFrom -->
+    <!-- https://jena.temposerver.ml/chatbot/#isFrom -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#isFrom">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Data"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Conversation"/>
+    <owl:ObjectProperty rdf:about="https://jena.temposerver.ml/chatbot/#isFrom">
+        <rdfs:domain rdf:resource="https://jena.temposerver.ml/chatbot/#Data"/>
+        <rdfs:range rdf:resource="https://jena.temposerver.ml/chatbot/#Conversation"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#participate -->
+    <!-- https://jena.temposerver.ml/chatbot/#participate -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#participate">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#ChatBot"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Conversation"/>
+    <owl:ObjectProperty rdf:about="https://jena.temposerver.ml/chatbot/#participate">
+        <rdfs:domain rdf:resource="https://jena.temposerver.ml/chatbot/#ChatBot"/>
+        <rdfs:range rdf:resource="https://jena.temposerver.ml/chatbot/#Conversation"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#send -->
+    <!-- https://jena.temposerver.ml/chatbot/#send -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#send">
-        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#store"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#SoftwareAplication"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Data"/>
+    <owl:ObjectProperty rdf:about="https://jena.temposerver.ml/chatbot/#send">
+        <owl:equivalentProperty rdf:resource="https://jena.temposerver.ml/chatbot/#store"/>
+        <rdfs:domain rdf:resource="https://jena.temposerver.ml/chatbot/#SoftwareAplication"/>
+        <rdfs:range rdf:resource="https://jena.temposerver.ml/chatbot/#Data"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#store -->
+    <!-- https://jena.temposerver.ml/chatbot/#store -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#store">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#SoftwareAplication"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Data"/>
+    <owl:ObjectProperty rdf:about="https://jena.temposerver.ml/chatbot/#store">
+        <rdfs:domain rdf:resource="https://jena.temposerver.ml/chatbot/#SoftwareAplication"/>
+        <rdfs:range rdf:resource="https://jena.temposerver.ml/chatbot/#Data"/>
     </owl:ObjectProperty>
     
 
@@ -88,30 +89,30 @@
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#comunicationWay -->
+    <!-- https://jena.temposerver.ml/chatbot/#comunicationWay -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#comunicationWay">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#SoftwareAplication"/>
+    <owl:DatatypeProperty rdf:about="https://jena.temposerver.ml/chatbot/#comunicationWay">
+        <rdfs:domain rdf:resource="https://jena.temposerver.ml/chatbot/#SoftwareAplication"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">The comunication way is a &quot;leaf&quot; in my ontology</rdfs:comment>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#content -->
+    <!-- https://jena.temposerver.ml/chatbot/#content -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#content">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Data"/>
+    <owl:DatatypeProperty rdf:about="https://jena.temposerver.ml/chatbot/#content">
+        <rdfs:domain rdf:resource="https://jena.temposerver.ml/chatbot/#Data"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#unbRuMenu -->
+    <!-- https://jena.temposerver.ml/chatbot/#unbRuMenu -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#unbRuMenu">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#content"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Data"/>
+    <owl:DatatypeProperty rdf:about="https://jena.temposerver.ml/chatbot/#unbRuMenu">
+        <rdfs:subPropertyOf rdf:resource="https://jena.temposerver.ml/chatbot/#content"/>
+        <rdfs:domain rdf:resource="https://jena.temposerver.ml/chatbot/#Data"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -128,38 +129,38 @@
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Bot -->
+    <!-- https://jena.temposerver.ml/chatbot/#Bot -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Bot">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#SoftwareAplication"/>
+    <owl:Class rdf:about="https://jena.temposerver.ml/chatbot/#Bot">
+        <rdfs:subClassOf rdf:resource="https://jena.temposerver.ml/chatbot/#SoftwareAplication"/>
         <rdfs:comment xml:lang="pt">&quot;Bot, diminutivo de robot, também conhecido como Internet bot ou web robot, é uma aplicação de software concebido para simular ações humanas repetidas vezes de maneira padrão, da mesma forma como faria um robô.&quot;</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#ChatBot -->
+    <!-- https://jena.temposerver.ml/chatbot/#ChatBot -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#ChatBot">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Bot"/>
+    <owl:Class rdf:about="https://jena.temposerver.ml/chatbot/#ChatBot">
+        <rdfs:subClassOf rdf:resource="https://jena.temposerver.ml/chatbot/#Bot"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#participate"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Conversation"/>
+                <owl:onProperty rdf:resource="https://jena.temposerver.ml/chatbot/#participate"/>
+                <owl:someValuesFrom rdf:resource="https://jena.temposerver.ml/chatbot/#Conversation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#WebCrawler"/>
+        <owl:disjointWith rdf:resource="https://jena.temposerver.ml/chatbot/#WebCrawler"/>
         <rdfs:comment xml:lang="en">&quot;A chatbot (also known as a smartbots, talkbot, chatterbot, Bot, IM bot, interactive agent, Conversational interface or Artificial Conversational Entity) is a computer program or an artificial intelligence which conducts a conversation via auditory or textual methods.&quot;</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Conversation -->
+    <!-- https://jena.temposerver.ml/chatbot/#Conversation -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Conversation">
+    <owl:Class rdf:about="https://jena.temposerver.ml/chatbot/#Conversation">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#hasMessage"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Data"/>
+                <owl:onProperty rdf:resource="https://jena.temposerver.ml/chatbot/#hasMessage"/>
+                <owl:someValuesFrom rdf:resource="https://jena.temposerver.ml/chatbot/#Data"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">&quot;Conversation is interactive communication between two or more people.&quot;</rdfs:comment>
@@ -167,13 +168,13 @@
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Data -->
+    <!-- https://jena.temposerver.ml/chatbot/#Data -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Data">
+    <owl:Class rdf:about="https://jena.temposerver.ml/chatbot/#Data">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#isFrom"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Conversation"/>
+                <owl:onProperty rdf:resource="https://jena.temposerver.ml/chatbot/#isFrom"/>
+                <owl:someValuesFrom rdf:resource="https://jena.temposerver.ml/chatbot/#Conversation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">&quot;Data and information are often used interchangeably; however, the extent to which a set of data is informative to someone depends on the extent to which it is unexpected by that person. The amount of information content in a data stream may be characterized by its Shannon entropy.&quot;</rdfs:comment>
@@ -181,10 +182,10 @@
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#MessagingApplication -->
+    <!-- https://jena.temposerver.ml/chatbot/#MessagingApplication -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#MessagingApplication">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#SoftwareAplication"/>
+    <owl:Class rdf:about="https://jena.temposerver.ml/chatbot/#MessagingApplication">
+        <rdfs:subClassOf rdf:resource="https://jena.temposerver.ml/chatbot/#SoftwareAplication"/>
         <rdfs:comment xml:lang="en">&quot;Messaging apps (a.k.a. &quot;Social messaging&quot; or &quot;chat applications&quot;) are apps and platforms that enable messaging, many of which started around social networking platforms,[1] but many of which have now developed into broad platforms enabling status updates, chatbots, payments and conversational commerce (e-commerce via chat).&quot;
 
 I am assuming that chatbots are more than messaging applications because for this ontology, messaging application are just the &quot;way&quot; that the message will pass through.</rdfs:comment>
@@ -192,19 +193,19 @@ I am assuming that chatbots are more than messaging applications because for thi
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#SoftwareAplication -->
+    <!-- https://jena.temposerver.ml/chatbot/#SoftwareAplication -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#SoftwareAplication">
+    <owl:Class rdf:about="https://jena.temposerver.ml/chatbot/#SoftwareAplication">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#send"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Data"/>
+                <owl:onProperty rdf:resource="https://jena.temposerver.ml/chatbot/#send"/>
+                <owl:someValuesFrom rdf:resource="https://jena.temposerver.ml/chatbot/#Data"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#store"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Data"/>
+                <owl:onProperty rdf:resource="https://jena.temposerver.ml/chatbot/#store"/>
+                <owl:someValuesFrom rdf:resource="https://jena.temposerver.ml/chatbot/#Data"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">&quot;An application software (app or application for short) is computer software designed to perform a group of coordinated functions, tasks, or activities for the benefit of the user.&quot;</rdfs:comment>
@@ -212,19 +213,19 @@ I am assuming that chatbots are more than messaging applications because for thi
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#WebCrawler -->
+    <!-- https://jena.temposerver.ml/chatbot/#WebCrawler -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#WebCrawler">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Bot"/>
+    <owl:Class rdf:about="https://jena.temposerver.ml/chatbot/#WebCrawler">
+        <rdfs:subClassOf rdf:resource="https://jena.temposerver.ml/chatbot/#Bot"/>
         <rdfs:comment xml:lang="en">&quot;A Web crawler, sometimes called a spider or spiderbot and often shortened to crawler, is an Internet bot that systematically browses the World Wide Web, typically for the purpose of Web indexing (web spidering). &quot;</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#webSite -->
+    <!-- https://jena.temposerver.ml/chatbot/#webSite -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#webSite">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#SoftwareAplication"/>
+    <owl:Class rdf:about="https://jena.temposerver.ml/chatbot/#webSite">
+        <rdfs:subClassOf rdf:resource="https://jena.temposerver.ml/chatbot/#SoftwareAplication"/>
         <rdfs:comment xml:lang="en">&quot;A website is a collection of related web pages, including multimedia content, typically identified with a common domain name, and published on at least one web server. Notable examples are wikipedia.org, google.com, and amazon.com. Today roughly 380 new websites are created every minute across the World.&quot;</rdfs:comment>
         <rdfs:comment xml:lang="en">Sarch for webSites ontologies to link here.</rdfs:comment>
     </owl:Class>
@@ -242,124 +243,124 @@ I am assuming that chatbots are more than messaging applications because for thi
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#arthur -->
+    <!-- https://jena.temposerver.ml/chatbot/#arthur -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#arthur">
-        <participate rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#knowUnbRuMenu"/>
+    <owl:NamedIndividual rdf:about="https://jena.temposerver.ml/chatbot/#arthur">
+        <chatbot:participate rdf:resource="https://jena.temposerver.ml/chatbot/#knowUnbRuMenu"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#facebook -->
+    <!-- https://jena.temposerver.ml/chatbot/#facebook -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#facebook">
-        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#MessagingApplication"/>
+    <owl:NamedIndividual rdf:about="https://jena.temposerver.ml/chatbot/#facebook">
+        <rdf:type rdf:resource="https://jena.temposerver.ml/chatbot/#MessagingApplication"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#goodBye -->
+    <!-- https://jena.temposerver.ml/chatbot/#goodBye -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#goodBye">
-        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Conversation"/>
+    <owl:NamedIndividual rdf:about="https://jena.temposerver.ml/chatbot/#goodBye">
+        <rdf:type rdf:resource="https://jena.temposerver.ml/chatbot/#Conversation"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#greet -->
+    <!-- https://jena.temposerver.ml/chatbot/#greet -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#greet">
-        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Conversation"/>
+    <owl:NamedIndividual rdf:about="https://jena.temposerver.ml/chatbot/#greet">
+        <rdf:type rdf:resource="https://jena.temposerver.ml/chatbot/#Conversation"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#knowUnbRuMenu -->
+    <!-- https://jena.temposerver.ml/chatbot/#knowUnbRuMenu -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#knowUnbRuMenu">
-        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Conversation"/>
+    <owl:NamedIndividual rdf:about="https://jena.temposerver.ml/chatbot/#knowUnbRuMenu">
+        <rdf:type rdf:resource="https://jena.temposerver.ml/chatbot/#Conversation"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#leiRouanet -->
+    <!-- https://jena.temposerver.ml/chatbot/#leiRouanet -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#leiRouanet">
-        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Conversation"/>
+    <owl:NamedIndividual rdf:about="https://jena.temposerver.ml/chatbot/#leiRouanet">
+        <rdf:type rdf:resource="https://jena.temposerver.ml/chatbot/#Conversation"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#lino -->
+    <!-- https://jena.temposerver.ml/chatbot/#lino -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#lino">
-        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#ChatBot"/>
-        <participate rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#knowUnbRuMenu"/>
-        <send rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#unbRuMenu"/>
+    <owl:NamedIndividual rdf:about="https://jena.temposerver.ml/chatbot/#lino">
+        <rdf:type rdf:resource="https://jena.temposerver.ml/chatbot/#ChatBot"/>
+        <chatbot:participate rdf:resource="https://jena.temposerver.ml/chatbot/#knowUnbRuMenu"/>
+        <chatbot:send rdf:resource="https://jena.temposerver.ml/chatbot/#unbRuMenu"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#rocketchat -->
+    <!-- https://jena.temposerver.ml/chatbot/#rocketchat -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#rocketchat">
-        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#MessagingApplication"/>
+    <owl:NamedIndividual rdf:about="https://jena.temposerver.ml/chatbot/#rocketchat">
+        <rdf:type rdf:resource="https://jena.temposerver.ml/chatbot/#MessagingApplication"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#tais -->
+    <!-- https://jena.temposerver.ml/chatbot/#tais -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#tais">
-        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#ChatBot"/>
-        <participate rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#goodBye"/>
-        <participate rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#greet"/>
-        <participate rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#leiRouanet"/>
+    <owl:NamedIndividual rdf:about="https://jena.temposerver.ml/chatbot/#tais">
+        <rdf:type rdf:resource="https://jena.temposerver.ml/chatbot/#ChatBot"/>
+        <chatbot:participate rdf:resource="https://jena.temposerver.ml/chatbot/#goodBye"/>
+        <chatbot:participate rdf:resource="https://jena.temposerver.ml/chatbot/#greet"/>
+        <chatbot:participate rdf:resource="https://jena.temposerver.ml/chatbot/#leiRouanet"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#telegram -->
+    <!-- https://jena.temposerver.ml/chatbot/#telegram -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#telegram">
-        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#MessagingApplication"/>
-        <send rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#unbRuMenu"/>
+    <owl:NamedIndividual rdf:about="https://jena.temposerver.ml/chatbot/#telegram">
+        <rdf:type rdf:resource="https://jena.temposerver.ml/chatbot/#MessagingApplication"/>
+        <chatbot:send rdf:resource="https://jena.temposerver.ml/chatbot/#unbRuMenu"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#unb -->
+    <!-- https://jena.temposerver.ml/chatbot/#unb -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#unb">
-        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#webSite"/>
-        <store rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#unbRuMenu"/>
+    <owl:NamedIndividual rdf:about="https://jena.temposerver.ml/chatbot/#unb">
+        <rdf:type rdf:resource="https://jena.temposerver.ml/chatbot/#webSite"/>
+        <chatbot:store rdf:resource="https://jena.temposerver.ml/chatbot/#unbRuMenu"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#unbRuMenu -->
+    <!-- https://jena.temposerver.ml/chatbot/#unbRuMenu -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#unbRuMenu">
-        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Data"/>
-        <unbRuMenu xml:lang="pt">Aqui deveria ter o cardápio da semana.</unbRuMenu>
+    <owl:NamedIndividual rdf:about="https://jena.temposerver.ml/chatbot/#unbRuMenu">
+        <rdf:type rdf:resource="https://jena.temposerver.ml/chatbot/#Data"/>
+        <chatbot:unbRuMenu xml:lang="pt">Aqui deveria ter o cardápio da semana.</chatbot:unbRuMenu>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#webCrawlerUnbRuMenu -->
+    <!-- https://jena.temposerver.ml/chatbot/#webCrawlerUnbRuMenu -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#webCrawlerUnbRuMenu">
-        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#WebCrawler"/>
-        <extract rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#unbRuMenu"/>
-        <send rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#unbRuMenu"/>
+    <owl:NamedIndividual rdf:about="https://jena.temposerver.ml/chatbot/#webCrawlerUnbRuMenu">
+        <rdf:type rdf:resource="https://jena.temposerver.ml/chatbot/#WebCrawler"/>
+        <chatbot:extract rdf:resource="https://jena.temposerver.ml/chatbot/#unbRuMenu"/>
+        <chatbot:send rdf:resource="https://jena.temposerver.ml/chatbot/#unbRuMenu"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#whatsapp -->
+    <!-- https://jena.temposerver.ml/chatbot/#whatsapp -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#whatsapp">
-        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#MessagingApplication"/>
+    <owl:NamedIndividual rdf:about="https://jena.temposerver.ml/chatbot/#whatsapp">
+        <rdf:type rdf:resource="https://jena.temposerver.ml/chatbot/#MessagingApplication"/>
     </owl:NamedIndividual>
     
 
@@ -375,17 +376,17 @@ I am assuming that chatbots are more than messaging applications because for thi
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Bot"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#MessagingApplication"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#webSite"/>
+            <rdf:Description rdf:about="https://jena.temposerver.ml/chatbot/#Bot"/>
+            <rdf:Description rdf:about="https://jena.temposerver.ml/chatbot/#MessagingApplication"/>
+            <rdf:Description rdf:about="https://jena.temposerver.ml/chatbot/#webSite"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Conversation"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#Data"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/root/ontologies/2018/9/untitled-ontology-7#SoftwareAplication"/>
+            <rdf:Description rdf:about="https://jena.temposerver.ml/chatbot/#Conversation"/>
+            <rdf:Description rdf:about="https://jena.temposerver.ml/chatbot/#Data"/>
+            <rdf:Description rdf:about="https://jena.temposerver.ml/chatbot/#SoftwareAplication"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
