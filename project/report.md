@@ -14,7 +14,7 @@ The objective of this project is to describe the concept of **chatbot** and be a
 
 * Be able to describe any chatbot using the proposed ontology
 
-* Use the created ontology in an application
+* Use the created ontology in a ChatBot
 
 ## Ontology
 
@@ -58,6 +58,13 @@ Chatbots are automaton too bot the main objective of this kind of software appli
   * WebSite
   A collection of related web pages.
 
+
+## Arquitecture
+
+![semantic_web_bot](images/semantic_web_bot.png)
+
+This is the used Architecture.
+
 ## Tools
 
 The main tool to this part of the project was:
@@ -66,11 +73,16 @@ The main tool to this part of the project was:
 
 * [OWLViz](https://protegewiki.stanford.edu/wiki/OWLViz)
 
-Any onthers importants tools that will be necessary to all the project is:
+* [Jena](https://jena.apache.org/)
+
+* [RASA core](https://github.com/RasaHQ/rasa_core)
+
+* [RASA nlu](https://rasa.com/docs/nlu/)
+
+* [RASA core-sdk](rasa_core_sdk)
 
 * [virtuoso](http://vos.openlinksw.com/owiki/wiki/VOS/VOSSQLRDF)
 
-* [RASA nlu](https://rasa.com/docs/nlu/)
 
 ## References
 
