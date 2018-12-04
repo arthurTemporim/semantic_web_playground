@@ -24,7 +24,7 @@ The objective of this project is to describe the concept of **chatbot** and be a
 
 The following image shows the generated ontology diagram using [OWLViz](https://protegewiki.stanford.edu/wiki/OWLViz) that represents the first version of the **chatbot** ontology.
 
-![ontology](images/chatbot.png)
+![ontology](https://github.com/arthurTemporim/semantic_web_playground/blob/master/project/images/chatbot.png)
 
 The ontology can be find [here](https://github.com/arthurTemporim/semantic_web_playground/blob/master/project/chatbot.owl)
 
@@ -68,7 +68,7 @@ A collection of related web pages.
 
 This is the architecture used in this project:
 
-![semantic_web_bot](images/semantic_web_bot.png)
+![semantic_web_bot](https://github.com/arthurTemporim/semantic_web_playground/blob/master/project/images/semantic_web_bot.png)
 
 Every tool used in the project will be explained in the next step.
 
@@ -182,9 +182,9 @@ My chatbot is able to explain what i planed in the objectives of this project.
 
 Here you can see some examples:
 
-![conversation1](images/conversation1.png)
+![conversation1](https://github.com/arthurTemporim/semantic_web_playground/blob/master/project/images/conversation1.png)
 
-![conversation2](images/conversation2.png)
+![conversation2](https://github.com/arthurTemporim/semantic_web_playground/blob/master/project/images/conversation2.png)
 
 ## Conclusion
 
