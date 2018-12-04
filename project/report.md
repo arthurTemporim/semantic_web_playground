@@ -2,6 +2,10 @@
 
 This report its about the creation of an ontology about chatbots.
 
+You can find the source of this project in my repository:
+
+[github,com/arthurTemporim/semantic_web_playground](https://github.com/arthurTemporim/semantic_web_playground/blob/master/project/)
+
 ## Context
 
 Since 2015 with the publish of the [Facebook API](https://developers.facebook.com/docs/messenger-platform/) enabling the usage of chatbots with users through facebook, many developers start to use this technology to many differents contexts.
@@ -49,21 +53,30 @@ A bot is an automaton that is able to do some action triggered or not by and hum
 Chatbots are automaton too bot the main objective of this kind of software application is to iteract through conversations with the user to do any kind of actions.
 
 * WebCrawler
-    Automaton responsible to get data from websites and format it to the necessary output.
+
+Automaton responsible to get data from websites and format it to the necessary output.
 
 * MessagingApplication
 
   [Telegram](https://telegram.org/), [Rocket.Chat](https://rocket.chat/) and [Facebook](http://facebook.com/) are examples of messaging applications that are necessary to allow the interation of the chatbots with the user (there are other ways to interact with chatbots too).
 
-  * WebSite
-  A collection of related web pages.
+* WebSite
 
+A collection of related web pages.
 
-## Arquitecture
+## Architecture
+
+This is the architecture used in this project:
 
 ![semantic_web_bot](images/semantic_web_bot.png)
 
-This is the used Architecture.
+Every tool used in the project will be explained in the next step.
+
+The ontology was made using Protegé and uploaded to a `virtuoso` triple storage, but after many trials, the configuration needed was not finished, so i started to upload the ontology directly to my `jena`.
+
+After the data is able to be get in `Jena` i started to build the [middleware](https://github.com/arthurTemporim/semantic_web_playground/blob/master/project/bot/middleware.py), this module handle the requests between my Chatbot and `Jena`. 
+
+At the end of the Architecture is the `Chatbot` and `Custom Actions` this are things made using `RASA` techinology.
 
 ## Tools
 
@@ -71,18 +84,43 @@ The main tool to this part of the project was:
 
 * [Protegé](https://protegewiki.stanford.edu/wiki/Main_Page)
 
+Used to build and maintain my ontology.
+
 * [OWLViz](https://protegewiki.stanford.edu/wiki/OWLViz)
+
+A tool of `Protegé` that allows the graph visualization of the ontology.
 
 * [Jena](https://jena.apache.org/)
 
-* [RASA core](https://github.com/RasaHQ/rasa_core)
+This is the ontology api used to get the data. You can find my instance there:
 
-* [RASA nlu](https://rasa.com/docs/nlu/)
+[jena.temposerver.ml/](http://jena.temposerver.ml/)
 
-* [RASA core-sdk](rasa_core_sdk)
+* [RASA](https://github.com/RasaHQ/rasa_core)
+
+This is the core `chatbot framework` used, it's very powerfull and i used to create my chatbot.
+
+You can talk with it just searching in telegram for:
+
+`tempo_o_bot`
 
 * [virtuoso](http://vos.openlinksw.com/owiki/wiki/VOS/VOSSQLRDF)
 
+I used this to store my ontology, but i didn't manage my ontology from my virtuso instance. 
+
+You can use my virtuoso instance there:
+
+[virtuoso.temposerver.ml/](http://virtuoso.temposerver.ml/)
+
+## ChatBot
+
+My chatbot is able to explain what i planed in the objectives of this project.
+
+Here you can see some examples:
+
+![conversation1](images/conversation1.png)
+
+![conversation2](images/conversation2.png)
 
 ## References
 
