@@ -112,6 +112,70 @@ You can use my virtuoso instance there:
 
 [virtuoso.temposerver.ml/](http://virtuoso.temposerver.ml/)
 
+## Usage
+
+To have all the configuration of the Architecture i used `docker`, i configurated a `docker-compose.yml` file with all need content to my stack.
+
+This is my [docker-compose](https://github.com/arthurTemporim/semantic_web_playground/blob/master/project/docker-compose.yml) file:
+
+```yml
+version: '2'
+
+services:
+####################################### CHATBOT ###############################
+  bot:
+    build:
+      context: .
+      dockerfile: ./docker/bot.Dockerfile
+    environment:
+      - TELEGRAM_ACCESS_TOKEN
+      - TELEGRAM_BOT_NAME
+      - TELEGRAM_WEBHOOK_URL
+    volumes:
+      - ./bot/:/bot/
+    ports:
+      - 5005:5005
+      - 5002:5002
+    depends_on:
+      - actions
+    command: "make run"
+
+  actions:
+    build:
+      context: .
+      dockerfile: ./docker/actions.Dockerfile
+    environment:
+      - JENA_URL
+    ports:
+      - 5055:5055
+    volumes:
+      - ./bot/actions.py:/bot/actions.py
+      - ./bot/middleware.py:/bot/middleware.py
+      - ./bot/Makefile:/bot/Makefile
+    command: "make run-actions"
+
+####################################### TRIPLE STORAGE ########################
+  virtuoso:
+    image: tenforce/virtuoso:1.3.1-virtuoso7.2.2
+    environment:
+      SPARQL_UPDATE: "true"
+      DEFAULT_GRAPH: "http://www.example.com/my-graph"
+    volumes:
+      - ./data/virtuoso:/data
+    ports:
+      - "8890:8890"
+
+####################################### JENA API ##############################
+  jena:
+    image: stain/jena-fuseki
+    volumes:
+      - ./fuseki:/fuseki
+    ports:
+- "3030:3030"
+```
+
+It is possible to change everything if is needed.
+
 ## ChatBot
 
 My chatbot is able to explain what i planed in the objectives of this project.
@@ -121,6 +185,20 @@ Here you can see some examples:
 ![conversation1](images/conversation1.png)
 
 ![conversation2](images/conversation2.png)
+
+## Conclusion
+
+I learned a lot about ontologies and interoperability in this discipline, but the world of semantic web is bigger and is needed more work to explore and learn more about all this context. 
+
+Thinking about it this is the proposed future worsk:
+
+* Improve my ontology, [chatbot.owl](https://github.com/arthurTemporim/semantic_web_playground/blob/master/project/chatbot.owl);
+
+* Finalize all the configuration needed to work with `virtuoso`;
+
+* Build a python lib to make the integration between `ontologies` and `rasa` easier;
+
+* Get data from more ontologies to build a `federated search`.
 
 ## References
 
